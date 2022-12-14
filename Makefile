@@ -1,8 +1,8 @@
 ### VARIABLES ###
 CC = gcc
 CFLAGS = -Wall -ansi
-OFILES = afaire.o code.o decode.o cle.o
-EXE = code
+OFILES = afaire.o
+EXE = vernam
 
 ## BUT PAR DEFAUT ###
  
