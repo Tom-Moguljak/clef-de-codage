@@ -90,7 +90,7 @@ int main(int argc, char *argv[]) {
 	if(strcmp(argv[1], "-c") == 0) {
 		/* Encodage */
 		if(argc != 5) {
-			fprintf(stderr, "Usage: %s -c [FICHIER_ENTREE] [FICHIER_CLE] [FICHIER_SORTIE]\n");
+			fprintf(stderr, "Usage: %s -c [FICHIER_ENTREE] [FICHIER_CLE] [FICHIER_SORTIE]\n", argv[0]);
 			return EXIT_FAILURE;
 		}
 
@@ -103,7 +103,7 @@ int main(int argc, char *argv[]) {
 	} else if(strcmp(argv[1], "-d") == 0) {
 		/* Décodage */
 		if(argc != 5) {
-			fprintf(stderr, "Usage: %s -d [FICHIER_ENTREE] [FICHIER_CLE] [FICHIER_SORTIE]\n");
+			fprintf(stderr, "Usage: %s -d [FICHIER_ENTREE] [FICHIER_CLE] [FICHIER_SORTIE]\n", argv[0]);
 			return EXIT_FAILURE;
 		}
 
@@ -116,7 +116,7 @@ int main(int argc, char *argv[]) {
 	} else if(strcmp(argv[1], "-k") == 0) {
 		/* Génération de clé */
 		if(argc != 4) {
-			fprintf(stderr, "Usage: %s -d [FICHIER_ENTREE] [FICHIER_CLE]\n");
+			fprintf(stderr, "Usage: %s -k [FICHIER_ENTREE] [FICHIER_CLE]\n", argv[0]);
 			return EXIT_FAILURE;
 		}
 
